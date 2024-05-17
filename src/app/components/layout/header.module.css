@@ -1,7 +1,7 @@
 .header{
     display: flex;
     flex-direction: column;
-    width: 95vw;  
+    width: auto;  
     padding: 1rem;
     border-bottom: 1px solid lightgray;
 }
@@ -20,6 +20,8 @@
 
 .logo{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+    margin-left: 3rem;
 }
 
 .headerIcons{

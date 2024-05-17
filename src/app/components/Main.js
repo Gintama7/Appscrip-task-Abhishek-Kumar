@@ -3,11 +3,14 @@ import styles from './main.module.css';
 import { fetchProducts } from '../lib/api';
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import Sidebar from './Sidebar';
-import { useState } from 'react';
+import { truncateText } from '../lib/utils';
+// import { useState } from 'react';
 
 const Main = async() => {
   // const [showSide,setShowSide] = useState(false);
     const products = await fetchProducts();
+    const maxTitleLength = 20; 
+
     return (
       <div className={styles.container}>
         <header className={styles.mainHeader}>
@@ -42,7 +45,7 @@ const Main = async() => {
                   />
                 </div>
                 <div>
-                  <h2>{product.title}</h2>
+                  <h2>{truncateText(product.title,maxTitleLength)}</h2>
                   <p>Sign in or create an account to see pricing</p>
                 </div>
               </div>

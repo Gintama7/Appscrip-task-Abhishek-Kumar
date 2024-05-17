@@ -1,13 +1,13 @@
-// "use client";
+
 import styles from './main.module.css';
 import { fetchProducts } from '../lib/api';
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import Sidebar from './Sidebar';
 import { truncateText } from '../lib/utils';
-// import { useState } from 'react';
+import { IoIosArrowDown } from "react-icons/io";
 
 const Main = async() => {
-  // const [showSide,setShowSide] = useState(false);
+  
     const products = await fetchProducts();
     const maxTitleLength = 20; 
 
@@ -29,7 +29,7 @@ const Main = async() => {
               <p>HIDE FILTER</p>
             </span>
           </span>
-          <p>RECOMMENDED</p>
+          <p style={{display:"flex",alignItems:"center",gap:"1rem"}}>RECOMMENDED <IoIosArrowDown/></p>
         </div>
         <div className={styles.mainBody}>
           <Sidebar/>

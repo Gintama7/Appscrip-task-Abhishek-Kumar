@@ -23,11 +23,12 @@ const Header = () => {
         </div>
 
     <div className={styles.headerBottom}>
-        <span>SHOP</span>
-        <span>SKILLS</span>
-        <span>STORIES</span>
-        <span>ABOUT</span>
-        <span>CONTACT US</span>
+    <span className={styles.spanHome}>HOME</span>
+        <span className={styles.spanShop}>SHOP</span>
+        <span className={styles.spanSkills}>SKILLS</span>
+        <span className={styles.spanStories}>STORIES</span>
+        <span className={styles.spanAbout}>ABOUT</span>
+        <span className={styles.spanContact}>CONTACT US</span>
         </div>        
 
     </div>

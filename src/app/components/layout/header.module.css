@@ -1,4 +1,5 @@
 .header{
+    margin-top: 0px;
     display: flex;
     flex-direction: column;
     width: auto;  
@@ -11,6 +12,7 @@
     justify-content: space-between;
     align-items: center;   
     padding: 1rem;
+    text-align: center;
 }
 
 .sideImage{
@@ -47,4 +49,29 @@
     justify-content: center;
     gap: 2rem;
    font-weight: 700;
+
 }
+
+.spanHome{
+    display: none;
+}
+
+@media (max-width: 700px) {
+   .engArrow{display: none;}
+   .headerBottom{
+    display: flex;
+    justify-content: start;
+   }
+  .spanHome{
+        display: inline-block;
+        color:#BFC8CD ;
+        font-weight: 500;
+        border-right: 1px solid #BFC8CD;
+        padding-right: 2rem;
+    }
+    .spanSkill,.spanStories,.spanAbout,.spanSkills,.spanContact{
+        display: none;
+    }
+
+
+  }

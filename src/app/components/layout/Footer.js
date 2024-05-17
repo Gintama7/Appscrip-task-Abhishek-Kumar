@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.footerBottom}>
-      <div className={styles.bottomLeft}>
+     <div className={styles.footerBottomContent}> <div className={styles.bottomLeft}>
 
       <ul> <h3>metta muse</h3>
         <li>About Us</li>
@@ -76,6 +76,8 @@ const Footer = () => {
          </div>
       </div>
       </div>
+      </div>
+      <p className={styles.footerBottomText}>Copyright © 2023 mettamuse. All rights reserved.</p>
     </div>
   )
 }
